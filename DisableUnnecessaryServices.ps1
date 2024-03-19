@@ -1,0 +1,13 @@
+﻿Get-Service -DisplayName 'Bluetooth Audio Gateway Service','Bluetooth Support Service','Downloaded Maps Manager','Geolocation Service','Infrared monitor service','Internet Connection Sharing (ICS)','Link-Layer Topology Discovery Mapper',`
+'LxssManager','Microsoft iSCSI Initiator Service','OpenSSH Authentication Agent','Link-Layer Topology Discovery Mapper','LxssManager','Microsoft iSCSI Initiator Service','OpenSSH Authentication Agent','OpenSSH SSH Server',`
+'Peer Name Resolution Protocol','Peer Networking Grouping','Peer Networking Identity Manager','PNRP Machine Name Publication Service','Problem Reports Control Panel Support','Remote Access Auto Connection Manager',`
+'Remote Desktop Services UserMode Port Redirector','Remote Procedure Call (RPC) Locator','Remote Registry','Routing and Remote Access','Simple TCP/IP Services','SNMP Service','SNMP Trap','Special Administration Console Helper',`
+'SSDP Discovery','UPnP Device Host','Windows Error Reporting Service','Windows Event Collector','Windows Media Player Network Sharing Service','Windows Mobile Hotspot Service','Windows Push Notifications System Service',`
+'Windows PushToInstall Service','Windows Remote Management (WS-Management)','Xbox Accessory Management Service','Xbox Live Auth Manager','Xbox Live Game Save','Xbox Live Networking Service' | Set-Service -StartupType Disabled
+
+Get-Service -DisplayName 'Bluetooth Audio Gateway Service','Bluetooth Support Service','Downloaded Maps Manager','Geolocation Service','Infrared monitor service','Internet Connection Sharing (ICS)','Link-Layer Topology Discovery Mapper',`
+'LxssManager','Microsoft iSCSI Initiator Service','OpenSSH Authentication Agent','Link-Layer Topology Discovery Mapper','LxssManager','Microsoft iSCSI Initiator Service','OpenSSH Authentication Agent','OpenSSH SSH Server',`
+'Peer Name Resolution Protocol','Peer Networking Grouping','Peer Networking Identity Manager','PNRP Machine Name Publication Service','Problem Reports Control Panel Support','Remote Access Auto Connection Manager',`
+'Remote Desktop Services UserMode Port Redirector','Remote Procedure Call (RPC) Locator','Remote Registry','Routing and Remote Access','Simple TCP/IP Services','SNMP Service','SNMP Trap','Special Administration Console Helper',`
+'SSDP Discovery','UPnP Device Host','Windows Error Reporting Service','Windows Event Collector','Windows Media Player Network Sharing Service','Windows Mobile Hotspot Service','Windows Push Notifications System Service',`
+'Windows PushToInstall Service','Windows Remote Management (WS-Management)','Xbox Accessory Management Service','Xbox Live Auth Manager','Xbox Live Game Save','Xbox Live Networking Service' | Stop-Service -PassThru -Verbose -Force
